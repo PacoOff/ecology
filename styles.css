@@ -42,7 +42,8 @@ html {
     height: 100%;
     background: url('https://cdn.pixabay.com/photo/2019/09/13/13/51/plant-4473973_1280.jpg') no-repeat center center;
     background-size: cover;
-    animation: float 20s ease-in-out infinite;
+    /* Убираем анимацию */
+    /* animation: float 20s ease-in-out infinite; */
 }
 
 @keyframes float {
@@ -2319,6 +2320,67 @@ section {
     .action-background {
         animation: none;
     } */
+    
+    /* Возвращаем светлую тему для мобильных устройств */
+    .threats-section,
+    .waste-types-section,
+    .sorting-section,
+    .records-section {
+        background: linear-gradient(135deg, #e8f4fd 0%, #b3d9f2 100%);
+        color: #333;
+    }
+    
+    .threats-section .section-title,
+    .waste-types-section .section-title,
+    .sorting-section .section-title,
+    .records-section .section-title {
+        color: #333;
+    }
+    
+    .threats-section .section-intro,
+    .waste-types-section .section-intro,
+    .sorting-section .section-intro,
+    .records-section .section-intro {
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .threat-card,
+    .waste-card,
+    .country-card,
+    .container-card,
+    .sorting-tips {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+}
+
+/* Возвращаем анимации для десктопа */
+@media (min-width: 769px) {
+    .hero-background {
+        animation: float 20s ease-in-out infinite;
+    }
+    
+    .action-background {
+        animation: float 20s ease-in-out infinite;
+    }
+    
+    .nav-btn:hover .btn-icon {
+        animation: wiggle 0.5s ease-in-out;
+    }
+    
+    .threat-card:hover,
+    .waste-card:hover,
+    .country-card:hover,
+    .container-card:hover,
+    .action-card:hover,
+    .impact-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-btn:hover {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    }
 }
 
 /* Исправляем ширину кнопок навигации на десктопе */
