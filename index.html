@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экологическая станция - Сохраним планету вместе!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Первый блок - Герой -->
+    <section class="hero-section" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h1 class="hero-title">
+                    Добро пожаловать на экологическую станцию!
+                </h1>
+                <p class="hero-subtitle">
+                    Привет! Ты попал на экологическую станцию — место, где мы вместе узнаем, как сделать нашу планету чище и сохранить природу для будущих поколений. Здесь ты узнаешь, что такое отходы, почему они опасны, как их правильно сортировать, и чем занимаются люди по всему миру, чтобы бороться с загрязнением.
+                </p>
+                
+                <!-- Навигационные кнопки -->
+                <div class="nav-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="#threats" class="nav-btn">
+                        <span class="btn-icon">⚠️</span>
+                        <span class="btn-text">Угрозы планете</span>
+                    </a>
+                    <a href="#waste-types" class="nav-btn">
+                        <span class="btn-icon">🗑️</span>
+                        <span class="btn-text">Виды отходов</span>
+                    </a>
+                    <a href="#sorting" class="nav-btn">
+                        <span class="btn-icon">♻️</span>
+                        <span class="btn-text">Сортировка</span>
+                    </a>
+                    <a href="#records" class="nav-btn">
+                        <span class="btn-icon">🌍</span>
+                        <span class="btn-text">Эко-рекорды</span>
+                    </a>
+                    <a href="#quiz" class="nav-btn">
+                        <span class="btn-icon">🧪</span>
+                        <span class="btn-text">Тест знаний</span>
+                    </a>
+                    <a href="#action" class="nav-btn">
+                        <span class="btn-icon">💚</span>
+                        <span class="btn-text">Действуй!</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Второй блок - Угрозы планете -->
+    <section class="threats-section" id="threats">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2 class="section-title">
+                    <span class="title-icon">⚠️</span>
+                    Что угрожает нашей планете?
+                </h2>
+                <p class="section-intro">
+                    Сегодня человечество производит больше отходов, чем когда‑либо раньше. Каждый житель Земли в среднем выбрасывает около 1 кг мусора в день. Если его не перерабатывать, последствия могут быть серьёзными:
+                </p>
+            </div>
+            
+            <div class="threats-grid">
+                <div class="threat-card animate__animated animate__fadeInUp" data-delay="0.1s">
+                    <div class="threat-icon">🌊</div>
+                    <h3>Пластик в океанах</h3>
+                    <ul>
+                        <li>Каждый год в океан попадает до 8 миллионов тонн пластика.</li>
+                        <li>Морские черепахи, птицы и рыбы принимают его за пищу и гибнут.</li>
+                    </ul>
+                </div>
+                
+                <div class="threat-card animate__animated animate__fadeInUp" data-delay="0.2s">
+                    <div class="threat-icon">🗑️</div>
+                    <h3>Гигантские свалки</h3>
+                    <ul>
+                        <li>Мусорные полигоны занимают огромные территории.</li>
+                        <li>Отходы разлагаются сотни и даже тысячи лет, выделяя в почву и воздух вредные вещества.</li>
+                    </ul>
+                </div>
+                
+                <div class="threat-card animate__animated animate__fadeInUp" data-delay="0.3s">
+                    <div class="threat-icon">🔥</div>
+                    <h3>Сжигание мусора</h3>
+                    <ul>
+                        <li>Если отходы сжигают неправильно, в атмосферу выделяются токсичные газы (диоксины, фураны).</li>
+                        <li>Эти вещества вредят дыхательной системе и могут вызывать болезни.</li>
+                    </ul>
+                </div>
+                
+                <div class="threat-card animate__animated animate__fadeInUp" data-delay="0.4s">
+                    <div class="threat-icon">🌳</div>
+                    <h3>Вырубка лесов</h3>
+                    <ul>
+                        <li>Леса — «лёгкие планеты». Они очищают воздух и дают дом животным.</li>
+                        <li>Бумага и картон, которые мы выбрасываем, часто сделаны из деревьев, вырубленных ради производства.</li>
+                    </ul>
+                </div>
+                
+                <div class="threat-card animate__animated animate__fadeInUp" data-delay="0.5s">
+                    <div class="threat-icon">🌡️</div>
+                    <h3>Изменение климата</h3>
+                    <ul>
+                        <li>Разложение отходов выделяет метан, который усиливает парниковый эффект.</li>
+                        <li>Это приводит к таянию ледников и изменению климата.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#hero" class="back-to-top-btn">Наверх</a>
+        </div>
+    </section>
+
+    <!-- Третий блок - Виды отходов -->
+    <section class="waste-types-section" id="waste-types">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2 class="section-title">
+                    <span class="title-icon">🗑️</span>
+                    Какие бывают отходы?
+                </h2>
+                <p class="section-intro">
+                    Мусор можно разделить на несколько основных категорий:
+                </p>
+            </div>
+            
+            <div class="waste-types-grid">
+                <div class="waste-card animate__animated animate__fadeInUp" data-delay="0.1s">
+                    <div class="waste-icon">🥤</div>
+                    <h3>Пластик</h3>
+                    <ul>
+                        <li>Разлагается более 400 лет.</li>
+                        <li>Может попадать в организм животных и человека в виде микропластика.</li>
+                    </ul>
+                </div>
+                
+                <div class="waste-card animate__animated animate__fadeInUp" data-delay="0.2s">
+                    <div class="waste-icon">🍾</div>
+                    <h3>Стекло</h3>
+                    <ul>
+                        <li>Разлагается более 1 000 лет.</li>
+                        <li>Полностью перерабатывается без потери качества.</li>
+                    </ul>
+                </div>
+                
+                <div class="waste-card animate__animated animate__fadeInUp" data-delay="0.3s">
+                    <div class="waste-icon">🥫</div>
+                    <h3>Металл (алюминий, сталь)</h3>
+                    <ul>
+                        <li>Переплавляется бесконечно много раз.</li>
+                        <li>Алюминиевая банка может вернуться в магазин в виде новой уже через 60 дней.</li>
+                    </ul>
+                </div>
+                
+                <div class="waste-card animate__animated animate__fadeInUp" data-delay="0.4s">
+                    <div class="waste-icon">📰</div>
+                    <h3>Бумага и картон</h3>
+                    <ul>
+                        <li>Разлагаются за 1–2 месяца при попадании в природу.</li>
+                        <li>Переработка одной тонны бумаги спасает около 17 деревьев.</li>
+                    </ul>
+                </div>
+                
+                <div class="waste-card animate__animated animate__fadeInUp" data-delay="0.5s">
+                    <div class="waste-icon">🍎</div>
+                    <h3>Органические отходы</h3>
+                    <ul>
+                        <li>Остатки еды, трава, листья.</li>
+                        <li>Можно использовать для создания компоста — натурального удобрения.</li>
+                    </ul>
+                </div>
+                
+                <div class="waste-card animate__animated animate__fadeInUp" data-delay="0.6s">
+                    <div class="waste-icon">⚠️</div>
+                    <h3>Опасные отходы</h3>
+                    <ul>
+                        <li>Батарейки, лампы, краски, лекарства.</li>
+                        <li>Содержат тяжёлые металлы и химические вещества.</li>
+                        <li>Если их выбросить на свалку, они могут отравить почву и воду на многие годы.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#hero" class="back-to-top-btn">Наверх</a>
+        </div>
+    </section>
+
+    <!-- Четвертый блок - Сортировка -->
+    <section class="sorting-section" id="sorting">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2 class="section-title">
+                    <span class="title-icon">♻️</span>
+                    Как правильно сортировать?
+                </h2>
+                <p class="section-intro">
+                    Сортировка — это способ разделить отходы по типам, чтобы их можно было переработать или безопасно утилизировать.
+                </p>
+            </div>
+            
+            <div class="sorting-content">
+                <div class="containers-grid animate__animated animate__fadeInUp">
+                    <div class="container-card blue">
+                        <div class="container-icon">📰</div>
+                        <h3>Синий</h3>
+                        <p>Бумага и картон (газеты, журналы, коробки)</p>
+                    </div>
+                    
+                    <div class="container-card yellow">
+                        <div class="container-icon">🥤</div>
+                        <h3>Жёлтый</h3>
+                        <p>Пластик и металл (бутылки, банки, крышки)</p>
+                    </div>
+                    
+                    <div class="container-card green">
+                        <div class="container-icon">🍾</div>
+                        <h3>Зелёный</h3>
+                        <p>Стекло (банки, бутылки, осколки)</p>
+                    </div>
+                    
+                    <div class="container-card brown">
+                        <div class="container-icon">🍎</div>
+                        <h3>Коричневый</h3>
+                        <p>Органические отходы (остатки еды, кожура, листья)</p>
+                    </div>
+                    
+                    <div class="container-card gray">
+                        <div class="container-icon">🗑️</div>
+                        <h3>Серый/Чёрный</h3>
+                        <p>Смешанные отходы (то, что нельзя переработать)</p>
+                    </div>
+                </div>
+                
+                <div class="sorting-tips animate__animated animate__fadeInUp">
+                    <h3>💡 Советы по сортировке:</h3>
+                    <ul>
+                        <li>Перед тем как выбросить бутылку или банку — прополощи её.</li>
+                        <li>Убирай крышки и этикетки, если это возможно.</li>
+                        <li>Не смешивай органику с пластиком — это ухудшает переработку.</li>
+                        <li>Батарейки, лампы и электронику сдавай в специальные пункты приёма.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#hero" class="back-to-top-btn">Наверх</a>
+        </div>
+    </section>
+
+    <!-- Пятый блок - Экологические рекорды -->
+    <section class="records-section" id="records">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2 class="section-title">
+                    <span class="title-icon">🌍</span>
+                    Экологические рекорды мира
+                </h2>
+                <p class="section-intro">
+                    Люди по‑разному решают проблему мусора. В некоторых странах идеи настолько необычные, что их хочется повторить!
+                </p>
+            </div>
+            
+            <!-- Информация о странах -->
+            <div class="countries-info">
+                <div class="country-card" data-country="sweden">
+                    <div class="country-flag sweden"></div>
+                    <h3>Швеция</h3>
+                    <p>Перерабатывает 99% отходов. Им не хватает мусора, поэтому они покупают его у других стран и используют для производства электричества и тепла.</p>
+                </div>
+                <div class="country-card" data-country="japan">
+                    <div class="country-flag japan"></div>
+                    <h3>Япония</h3>
+                    <p>В городе Камикацу отходы разделяют на 45 категорий — даже крышки от бутылок сортируют отдельно. Перед сдачей мусор обязательно моют, иначе его не примут.</p>
+                </div>
+                <div class="country-card" data-country="germany">
+                    <div class="country-flag germany"></div>
+                    <h3>Германия</h3>
+                    <p>Сортировка здесь — обязательное правило, а за ошибку можно получить штраф до 100 евро. У многих домов есть «мусорные дворики» с десятками разных контейнеров.</p>
+                </div>
+                <div class="country-card" data-country="netherlands">
+                    <div class="country-flag netherlands"></div>
+                    <h3>Нидерланды</h3>
+                    <p>Популярны магазины без упаковки — люди приносят свои баночки и сумки, чтобы не использовать пластик. Это стало модой: многие подростки ходят за покупками с многоразовыми контейнерами.</p>
+                </div>
+                <div class="country-card" data-country="canada">
+                    <div class="country-flag canada"></div>
+                    <h3>Канада</h3>
+                    <p>Органические отходы здесь превращают в компост и используют в парках и школьных садах. Во многих школах проводят соревнования — кто соберёт больше органики.</p>
+                </div>
+                <div class="country-card" data-country="usa">
+                    <div class="country-flag usa"></div>
+                    <h3>США</h3>
+                    <p>Есть компании, которые делают одежду из пластиковых бутылок. На одну толстовку уходит примерно 20 бутылок, которые могли бы оказаться в океане.</p>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#hero" class="back-to-top-btn">Наверх</a>
+        </div>
+    </section>
+
+    <!-- Шестой блок - Тест знаний -->
+    <section class="quiz-section" id="quiz">
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2 class="section-title">
+                    <span class="title-icon">🧪</span>
+                    Проверь свои знания!
+                </h2>
+            </div>
+            
+            <div class="quiz-container animate__animated animate__fadeInUp">
+                <div class="quiz-question" data-question="1">
+                    <h3>Вопрос 1: Как правильно выбросить пластиковую бутылку?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="a">
+                            <span>В контейнер для пластика, не снимая крышку</span>
+                        </label>
+                        <label class="quiz-option correct">
+                            <input type="radio" name="q1" value="b">
+                            <span>В контейнер для пластика, сняв крышку и сплющив бутылку</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="c">
+                            <span>В обычный мусорный бак</span>
+                        </label>
+                    </div>
+                    <div class="explanation hidden">
+                        <p><strong>💡 Правильный ответ:</strong> Крышки перерабатываются отдельно, а сплющенная бутылка занимает меньше места при транспортировке.</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-question" data-question="2">
+                    <h3>Вопрос 2: Что из этого относится к опасным отходам?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option correct">
+                            <input type="radio" name="q2" value="a">
+                            <span>Батарейки</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="b">
+                            <span>Газеты</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="c">
+                            <span>Листья</span>
+                        </label>
+                    </div>
+                    <div class="explanation hidden">
+                        <p><strong>💡 Правильный ответ:</strong> Батарейки содержат тяжёлые металлы и требуют специальной утилизации.</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-question" data-question="3">
+                    <h3>Вопрос 3: Что можно сделать из переработанной бумаги?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option correct">
+                            <input type="radio" name="q3" value="a">
+                            <span>Туалетную бумагу</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="b">
+                            <span>Пластиковую игрушку</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="c">
+                            <span>Стеклянную бутылку</span>
+                        </label>
+                    </div>
+                    <div class="explanation hidden">
+                        <p><strong>💡 Правильный ответ:</strong> Бумагу перерабатывают в картон, салфетки, туалетную бумагу и тетради.</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-question" data-question="4">
+                    <h3>Вопрос 4: Сколько лет разлагается пластиковый пакет?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="a">
+                            <span>5 лет</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="b">
+                            <span>50 лет</span>
+                        </label>
+                        <label class="quiz-option correct">
+                            <input type="radio" name="q4" value="c">
+                            <span>Более 200 лет</span>
+                        </label>
+                    </div>
+                    <div class="explanation hidden">
+                        <p><strong>💡 Правильный ответ:</strong> В природе пакет может лежать веками, выделяя микропластик.</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-question" data-question="5">
+                    <h3>Вопрос 5: Что лучше: одноразовый пластиковый стакан или многоразовая бутылка?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="a">
+                            <span>Одноразовый стакан</span>
+                        </label>
+                        <label class="quiz-option correct">
+                            <input type="radio" name="q5" value="b">
+                            <span>Многоразовая бутылка</span>
+                        </label>
+                    </div>
+                    <div class="explanation hidden">
+                        <p><strong>💡 Правильный ответ:</strong> Многоразовая бутылка служит годами и сокращает количество отходов.</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-question" data-question="6">
+                    <h3>Вопрос 6: Что делают в Швеции с частью мусора?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q6" value="a">
+                            <span>Вывозят в океан</span>
+                        </label>
+                        <label class="quiz-option correct">
+                            <input type="radio" name="q6" value="b">
+                            <span>Сжигают на заводах для получения энергии</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q6" value="c">
+                            <span>Хранят на свалках</span>
+                        </label>
+                    </div>
+                    <div class="explanation hidden">
+                        <p><strong>💡 Правильный ответ:</strong> Мусор там перерабатывают или используют как источник энергии.</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-question" data-question="7">
+                    <h3>Вопрос 7: Что можно положить в контейнер для органики?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option correct">
+                            <input type="radio" name="q7" value="a">
+                            <span>Банановую кожуру</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="b">
+                            <span>Пластиковый пакет</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="c">
+                            <span>Стеклянную банку</span>
+                        </label>
+                    </div>
+                    <div class="explanation hidden">
+                        <p><strong>💡 Правильный ответ:</strong> Органические отходы разлагаются и превращаются в компост.</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-controls">
+                    <button class="check-answers-btn">Проверить ответы</button>
+                    <button class="reset-quiz-btn">Начать заново</button>
+                </div>
+                
+                <div class="quiz-results hidden">
+                    <h3>📊 Результаты:</h3>
+                    <div class="score-display">
+                        <span class="score-text">Правильных ответов: </span>
+                        <span class="score-number">0</span>
+                        <span class="score-total">/7</span>
+                    </div>
+                    <div class="result-message"></div>
+                    <div class="result-advice"></div>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#hero" class="back-to-top-btn">Наверх</a>
+        </div>
+    </section>
+
+    <!-- Седьмой блок - Действуй -->
+    <section class="action-section" id="action">
+        <div class="action-background">
+            <div class="action-overlay"></div>
+            <div class="floating-elements">
+                <div class="floating-icon">🌱</div>
+                <div class="floating-icon">♻️</div>
+                <div class="floating-icon">🌍</div>
+                <div class="floating-icon">💚</div>
+                <div class="floating-icon">🔋</div>
+                <div class="floating-icon">🛍️</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-header animate__animated animate__fadeInUp">
+                <h2 class="section-title">
+                    <span class="title-icon">🚀</span>
+                    Стань Экогероем!
+                </h2>
+                <p class="section-intro">
+                    Каждый твой выбор имеет значение! Присоединяйся к движению защитников планеты и начни менять мир уже сегодня.
+                </p>
+            </div>
+            
+            <div class="hero-callout animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="callout-content">
+                    <h3>💪 Ты можешь изменить мир!</h3>
+                    <p>Маленькие действия создают большие перемены. Начни с себя — и вдохнови других!</p>
+                </div>
+            </div>
+            
+            <div class="action-cards-container animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="action-card primary">
+                    <div class="card-header">
+                        <div class="card-icon">♻️</div>
+                        <h4>Сортируй отходы</h4>
+                    </div>
+                    <p>Пластик к пластику, бумагу к бумаге — каждый правильный выбор спасает планету!</p>
+                    <div class="card-stats">
+                        <span class="stat">-50% отходов</span>
+                        <span class="stat">+100% переработка</span>
+                    </div>
+                </div>
+                
+                <div class="action-card secondary">
+                    <div class="card-header">
+                        <div class="card-icon">🛍️</div>
+                        <h4>Используй многоразовое</h4>
+                    </div>
+                    <p>Сумки и бутылки — они стильные, долговечные и спасают планету каждый день!</p>
+                    <div class="card-stats">
+                        <span class="stat">-500 пакетов/год</span>
+                        <span class="stat">+10 лет службы</span>
+                    </div>
+                </div>
+                
+                <div class="action-card accent">
+                    <div class="card-header">
+                        <div class="card-icon">🔋</div>
+                        <h4>Сдавай опасные отходы</h4>
+                    </div>
+                    <p>Батарейки, лампы и электронику — в специальные пункты приёма для безопасной утилизации!</p>
+                    <div class="card-stats">
+                        <span class="stat">-99% загрязнения</span>
+                        <span class="stat">+100% безопасность</span>
+                    </div>
+                </div>
+                
+                <div class="action-card highlight">
+                    <div class="card-header">
+                        <div class="card-icon">🗣️</div>
+                        <h4>Рассказывай другим</h4>
+                    </div>
+                    <p>Делись знаниями с друзьями и семьёй — вместе мы сможем больше!</p>
+                    <div class="card-stats">
+                        <span class="stat">+10 последователей</span>
+                        <span class="stat">×100 влияние</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="impact-showcase animate__animated animate__fadeInUp animate__delay-3s">
+                <div class="impact-header">
+                    <h3>💡 Твоё влияние на планету</h3>
+                    <p>Посмотри, как твои действия меняют мир</p>
+                </div>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-icon">🌊</div>
+                        <div class="impact-number">-1</div>
+                        <div class="impact-label">пластиковая бутылка в океане</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">🌳</div>
+                        <div class="impact-number">+17</div>
+                        <div class="impact-label">спасённых деревьев</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">⚡</div>
+                        <div class="impact-number">+60%</div>
+                        <div class="impact-label">энергии сэкономлено</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">🌍</div>
+                        <div class="impact-number">×1000</div>
+                        <div class="impact-label">влияние на других</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="motivation-section animate__animated animate__fadeInUp animate__delay-4s">
+                <div class="motivation-card">
+                    <div class="motivation-content">
+                        <div class="motivation-icon">🌟</div>
+                        <h3>Присоединяйся к движению "Экогерои"!</h3>
+                        <p>Начни с себя — и стань примером для других. Каждый день — новая возможность спасти планету!</p>
+                    </div>
+                    <div class="motivation-decoration">
+                        <div class="decoration-circle"></div>
+                        <div class="decoration-circle"></div>
+                        <div class="decoration-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top-container">
+            <a href="#hero" class="back-to-top-btn">Наверх</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
