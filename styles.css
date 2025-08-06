@@ -2311,13 +2311,14 @@ section {
 
 /* Мобильная версия - убираем анимацию фона */
 @media (max-width: 768px) {
-    .hero-background {
+    /* Убираем отключение анимации, чтобы фон выглядел одинаково */
+    /* .hero-background {
         animation: none;
     }
     
     .action-background {
         animation: none;
-    }
+    } */
 }
 
 /* Исправляем ширину кнопок навигации на десктопе */
@@ -2442,6 +2443,31 @@ section {
     .back-to-top-btn {
         padding: 8px 16px;
         font-size: 0.85rem;
+    }
+}
+
+/* Мобильная версия - уменьшаем заголовок "Стань Экогероем" */
+@media (max-width: 768px) {
+    .action-section .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .action-section .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .action-section .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .action-section .section-title {
+        font-size: 1.5rem;
     }
 }
 
