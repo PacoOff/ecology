@@ -2309,9 +2309,141 @@ section {
     }
 }
 
+/* Мобильная версия - убираем анимацию фона */
+@media (max-width: 768px) {
+    .hero-background {
+        animation: none;
+    }
+    
+    .action-background {
+        animation: none;
+    }
+}
 
+/* Исправляем ширину кнопок навигации на десктопе */
+@media (min-width: 992px) {
+    .nav-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 900px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .nav-btn {
+        padding: 25px 20px;
+        min-width: 200px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn-icon {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .btn-text {
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+}
 
+/* Восстанавливаем стили кнопки "Наверх" */
+.back-to-top-container {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 0;
+}
 
+.back-to-top-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.back-to-top-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.back-to-top-btn:hover::before {
+    left: 100%;
+}
+
+.back-to-top-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Особые стили для светлых секций */
+.threats-section .back-to-top-btn,
+.waste-types-section .back-to-top-btn,
+.sorting-section .back-to-top-btn,
+.records-section .back-to-top-btn {
+    background: rgba(0, 0, 0, 0.1);
+    color: #333;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.threats-section .back-to-top-btn:hover,
+.waste-types-section .back-to-top-btn:hover,
+.sorting-section .back-to-top-btn:hover,
+.records-section .back-to-top-btn:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* Особые стили для темных секций (блок 6 и 7) */
+.quiz-section .back-to-top-btn,
+.action-section .back-to-top-btn {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.quiz-section .back-to-top-btn:hover,
+.action-section .back-to-top-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Адаптивность для кнопок "Наверх" */
+@media (max-width: 768px) {
+    .back-to-top-container {
+        margin-top: 40px;
+    }
+    
+    .back-to-top-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
 
 
 
