@@ -1280,9 +1280,123 @@ section {
     100% { transform: rotate(360deg); }
 }
 
-@media (max-width: 768px) {
+/* Comprehensive Mobile Responsive Design */
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 1200px;
+    }
+    
+    .threats-grid,
+    .waste-types-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .countries-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     .action-cards-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .impact-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Desktop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .threats-grid,
+    .waste-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .countries-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .action-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .nav-btn {
+        padding: 20px 15px;
+    }
+    
+    .btn-icon {
+        font-size: 2rem;
+    }
+    
+    .btn-text {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-intro {
+        font-size: 1.1rem;
+    }
+    
+    .threats-grid,
+    .waste-types-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .countries-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .containers-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .action-cards-container {
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     
@@ -1291,270 +1405,913 @@ section {
         gap: 20px;
     }
     
-    .motivation-actions {
+    .quiz-controls {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     
-    .action-section .section-title {
-        font-size: 2.5rem;
-    }
-    
-    .callout-content h3 {
-        font-size: 2rem;
-    }
-    
-    .motivation-card h3 {
-        font-size: 2rem;
-    }
-    
-    .impact-header h3 {
-        font-size: 2rem;
+    .check-answers-btn,
+    .reset-quiz-btn {
+        width: 200px;
     }
 }
 
-@media (max-width: 480px) {
-    .impact-grid {
-        grid-template-columns: 1fr;
+/* Tablet Portrait (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-title {
+        font-size: 2.5rem;
     }
     
-    .action-section .section-title {
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .nav-btn {
+        padding: 18px 12px;
+    }
+    
+    .btn-icon {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .btn-text {
+        font-size: 0.85rem;
+    }
+    
+    .section-title {
         font-size: 2rem;
     }
     
-    .callout-content h3 {
+    .section-intro {
+        font-size: 1rem;
+    }
+    
+    .threat-card,
+    .waste-card,
+    .country-card {
+        padding: 20px 15px;
+    }
+    
+    .threat-icon,
+    .waste-icon {
+        font-size: 2.5rem;
+    }
+    
+    .threat-card h3,
+    .waste-card h3,
+    .country-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .threat-card li,
+    .waste-card li {
+        font-size: 0.85rem;
+    }
+    
+    .containers-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .container-card {
+        padding: 18px 12px;
+    }
+    
+    .container-icon {
         font-size: 1.8rem;
     }
     
-    .motivation-card h3 {
-        font-size: 1.8rem;
+    .container-card h3 {
+        font-size: 1rem;
     }
     
-    .impact-header h3 {
-        font-size: 1.8rem;
+    .container-card p {
+        font-size: 0.75rem;
+    }
+    
+    .sorting-tips {
+        padding: 20px 15px;
+    }
+    
+    .sorting-tips h3 {
+        font-size: 1.3rem;
+    }
+    
+    .sorting-tips li {
+        font-size: 0.9rem;
+    }
+    
+    .quiz-question {
+        padding: 20px 15px;
+    }
+    
+    .quiz-question h3 {
+        font-size: 1.1rem;
+    }
+    
+    .quiz-option {
+        padding: 12px 15px;
+    }
+    
+    .quiz-option span {
+        font-size: 0.9rem;
+    }
+    
+    .explanation {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+    
+    .check-answers-btn,
+    .reset-quiz-btn {
+        width: 180px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .score-display {
+        font-size: 1.5rem;
+    }
+    
+    .result-message {
+        font-size: 1.1rem;
+    }
+    
+    .result-advice {
+        font-size: 0.95rem;
     }
     
     .hero-callout {
         padding: 30px 20px;
+        margin: 30px 0;
+    }
+    
+    .callout-content h3 {
+        font-size: 2rem;
+    }
+    
+    .callout-content p {
+        font-size: 1rem;
     }
     
     .motivation-card {
         padding: 30px 20px;
     }
-}
-
-/* Анимации для появления элементов */
-.animate__fadeInUp[data-delay] {
-    animation-delay: var(--delay);
-}
-
-/* Дополнительные эффекты */
-.threat-card,
-.waste-card,
-.container-card,
-.quiz-question,
-.action-item {
-    animation: fadeInUp 0.8s ease-out;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Эффект параллакса для фона */
-.hero-background {
-    animation: parallax 20s ease-in-out infinite;
-}
-
-@keyframes parallax {
-    0%, 100% { transform: translateY(0px) scale(1); }
-    50% { transform: translateY(-20px) scale(1.05); }
-}
-
-/* Улучшенные hover эффекты */
-.nav-btn:hover .btn-icon {
-    animation: wiggle 0.5s ease-in-out;
-}
-
-@keyframes wiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-5deg); }
-    75% { transform: rotate(5deg); }
-}
-
-/* Эффект свечения для кнопок */
-.nav-btn:hover {
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-}
-
-/* Анимация для правильных ответов - только после проверки */
-.quiz-option.show-result.correct input:checked + span {
-    color: #2ecc71;
-    font-weight: bold;
-}
-
-/* Анимация для неправильных ответов - только после проверки */
-.quiz-option.show-result:not(.correct) input:checked + span {
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-/* Стили для показа результатов после проверки */
-.quiz-option.show-result.correct {
-    background: rgba(46, 204, 113, 0.2);
-    border-color: #2ecc71;
-}
-
-.quiz-option.show-result:not(.correct) {
-    background: rgba(231, 76, 60, 0.2);
-    border-color: #e74c3c;
-}
-
-.quiz-option.show-result.correct input:checked + span {
-    color: #2ecc71;
-    font-weight: bold;
-}
-
-.quiz-option.show-result:not(.correct) input:checked + span {
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-.quiz-option.show-result:not(.correct) .explanation {
-    color: #e74c3c;
-    font-style: italic;
-}
-
-
-
-
-
-/* Плавное появление модального окна */
-.country-info-modal.show {
-    display: flex;
-    animation: fadeIn 0.3s ease-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.modal-content {
-    animation: slideInUp 0.3s ease-out;
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -30%);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
-}
-
-/* Стили для кнопки "Наверх" */
-.back-to-top-container {
-    text-align: center;
-    margin-top: 60px;
-    padding: 20px 0;
-}
-
-.back-to-top-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 25px;
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.back-to-top-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-}
-
-.back-to-top-btn:hover::before {
-    left: 100%;
-}
-
-.back-to-top-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Особые стили для светлых секций */
-.threats-section .back-to-top-btn,
-.waste-types-section .back-to-top-btn,
-.sorting-section .back-to-top-btn,
-.records-section .back-to-top-btn {
-    background: rgba(0, 0, 0, 0.1);
-    color: #333;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-
-.threats-section .back-to-top-btn:hover,
-.waste-types-section .back-to-top-btn:hover,
-.sorting-section .back-to-top-btn:hover,
-.records-section .back-to-top-btn:hover {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Особые стили для темных секций (блок 6 и 7) */
-.quiz-section .back-to-top-btn,
-.action-section .back-to-top-btn {
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-.quiz-section .back-to-top-btn:hover,
-.action-section .back-to-top-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-}
-
-/* Адаптивность для кнопок "Наверх" */
-@media (max-width: 768px) {
-    .back-to-top-container {
-        margin-top: 40px;
+    
+    .motivation-card h3 {
+        font-size: 2rem;
     }
     
-    .back-to-top-btn {
-        padding: 10px 20px;
+    .motivation-card p {
+        font-size: 1rem;
+    }
+    
+    .motivation-icon {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile Large (480px - 575px) */
+@media (min-width: 480px) and (max-width: 575px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        padding: 15px 10px;
+    }
+    
+    .btn-icon {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+    }
+    
+    .btn-text {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-intro {
+        font-size: 0.95rem;
+    }
+    
+    .threat-card,
+    .waste-card,
+    .country-card {
+        padding: 15px 12px;
+    }
+    
+    .threat-icon,
+    .waste-icon {
+        font-size: 2rem;
+    }
+    
+    .threat-card h3,
+    .waste-card h3,
+    .country-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .threat-card li,
+    .waste-card li {
+        font-size: 0.85rem;
+    }
+    
+    .containers-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .container-card {
+        padding: 15px 10px;
+    }
+    
+    .container-icon {
+        font-size: 1.6rem;
+    }
+    
+    .container-card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .container-card p {
+        font-size: 0.7rem;
+    }
+    
+    .sorting-tips {
+        padding: 15px 12px;
+    }
+    
+    .sorting-tips h3 {
+        font-size: 1.2rem;
+    }
+    
+    .sorting-tips li {
+        font-size: 0.85rem;
+    }
+    
+    .quiz-question {
+        padding: 15px 12px;
+    }
+    
+    .quiz-question h3 {
+        font-size: 1rem;
+    }
+    
+    .quiz-option {
+        padding: 10px 12px;
+    }
+    
+    .quiz-option span {
+        font-size: 0.85rem;
+    }
+    
+    .explanation {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .check-answers-btn,
+    .reset-quiz-btn {
+        width: 160px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .score-display {
+        font-size: 1.3rem;
+    }
+    
+    .result-message {
+        font-size: 1rem;
+    }
+    
+    .result-advice {
+        font-size: 0.9rem;
+    }
+    
+    .hero-callout {
+        padding: 25px 15px;
+        margin: 25px 0;
+    }
+    
+    .callout-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .callout-content p {
+        font-size: 0.95rem;
+    }
+    
+    .action-card {
+        padding: 25px 15px;
+    }
+    
+    .card-icon {
+        font-size: 2rem;
+    }
+    
+    .action-card h4 {
+        font-size: 1.3rem;
+    }
+    
+    .action-card p {
+        font-size: 0.9rem;
+    }
+    
+    .stat {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .impact-showcase {
+        padding: 30px 15px;
+        margin: 40px 0;
+    }
+    
+    .impact-header h3 {
+        font-size: 1.8rem;
+    }
+    
+    .impact-header p {
+        font-size: 1rem;
+    }
+    
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .impact-item {
+        padding: 15px 10px;
+    }
+    
+    .impact-icon {
+        font-size: 2rem;
+    }
+    
+    .impact-number {
+        font-size: 1.5rem;
+    }
+    
+    .impact-label {
+        font-size: 0.8rem;
+    }
+    
+    .motivation-card {
+        padding: 25px 15px;
+    }
+    
+    .motivation-card h3 {
+        font-size: 1.8rem;
+    }
+    
+    .motivation-card p {
+        font-size: 0.95rem;
+    }
+    
+    .motivation-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile Small (320px - 479px) */
+@media (min-width: 320px) and (max-width: 479px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .nav-btn {
+        padding: 12px 8px;
+    }
+    
+    .btn-icon {
+        font-size: 1.4rem;
+    }
+    
+    .btn-text {
+        font-size: 0.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .section-intro {
+        font-size: 0.9rem;
+    }
+    
+    .threat-card,
+    .waste-card,
+    .country-card {
+        padding: 15px 12px;
+    }
+    
+    .threat-icon,
+    .waste-icon {
+        font-size: 2rem;
+    }
+    
+    .threat-card h3,
+    .waste-card h3,
+    .country-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .threat-card li,
+    .waste-card li {
+        font-size: 0.8rem;
+    }
+    
+    .container-card {
+        padding: 12px 8px;
+    }
+    
+    .container-icon {
+        font-size: 1.4rem;
+    }
+    
+    .container-card h3 {
+        font-size: 0.8rem;
+    }
+    
+    .container-card p {
+        font-size: 0.65rem;
+    }
+    
+    .quiz-question {
+        padding: 12px 10px;
+    }
+    
+    .quiz-question h3 {
+        font-size: 0.9rem;
+    }
+    
+    .quiz-option {
+        padding: 8px 10px;
+    }
+    
+    .quiz-option span {
+        font-size: 0.8rem;
+    }
+    
+    .check-answers-btn,
+    .reset-quiz-btn {
+        width: 140px;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .hero-callout {
+        padding: 20px 12px;
+    }
+    
+    .callout-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .callout-content p {
+        font-size: 0.9rem;
+    }
+    
+    .action-card {
+        padding: 15px 10px;
+    }
+    
+    .card-icon {
+        font-size: 1.6rem;
+    }
+    
+    .action-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .action-card p {
+        font-size: 0.85rem;
+    }
+    
+    .impact-showcase {
+        padding: 20px 10px;
+    }
+    
+    .impact-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .impact-header p {
+        font-size: 0.8rem;
+    }
+    
+    .impact-item {
+        padding: 10px 6px;
+    }
+    
+    .impact-icon {
+        font-size: 1.6rem;
+    }
+    
+    .impact-number {
+        font-size: 1.1rem;
+    }
+    
+    .impact-label {
+        font-size: 0.75rem;
+    }
+    
+    .motivation-card {
+        padding: 15px 10px;
+    }
+    
+    .motivation-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .motivation-card p {
+        font-size: 0.8rem;
+    }
+    
+    .motivation-icon {
+        font-size: 1.8rem;
+    }
+}
+
+/* Extra Small Mobile (up to 319px) */
+@media (max-width: 319px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    
+    .nav-btn {
+        padding: 10px 6px;
+    }
+    
+    .btn-icon {
+        font-size: 1.2rem;
+    }
+    
+    .btn-text {
+        font-size: 0.7rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .section-intro {
+        font-size: 0.8rem;
+    }
+    
+    .threat-card,
+    .waste-card,
+    .country-card {
+        padding: 12px 10px;
+    }
+    
+    .threat-icon,
+    .waste-icon {
+        font-size: 1.8rem;
+    }
+    
+    .threat-card h3,
+    .waste-card h3,
+    .country-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .threat-card li,
+    .waste-card li {
+        font-size: 0.8rem;
+    }
+    
+    .container-card {
+        padding: 12px 8px;
+    }
+    
+    .container-icon {
+        font-size: 1.4rem;
+    }
+    
+    .container-card h3 {
+        font-size: 0.8rem;
+    }
+    
+    .container-card p {
+        font-size: 0.65rem;
+    }
+    
+    .quiz-question {
+        padding: 12px 10px;
+    }
+    
+    .quiz-question h3 {
+        font-size: 0.9rem;
+    }
+    
+    .quiz-option {
+        padding: 8px 10px;
+    }
+    
+    .quiz-option span {
+        font-size: 0.8rem;
+    }
+    
+    .check-answers-btn,
+    .reset-quiz-btn {
+        width: 120px;
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .hero-callout {
+        padding: 15px 10px;
+    }
+    
+    .callout-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .callout-content p {
+        font-size: 0.8rem;
+    }
+    
+    .action-card {
+        padding: 15px 10px;
+    }
+    
+    .card-icon {
+        font-size: 1.6rem;
+    }
+    
+    .action-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .action-card p {
+        font-size: 0.8rem;
+    }
+    
+    .impact-showcase {
+        padding: 20px 10px;
+    }
+    
+    .impact-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .impact-header p {
+        font-size: 0.8rem;
+    }
+    
+    .impact-item {
+        padding: 10px 6px;
+    }
+    
+    .impact-icon {
+        font-size: 1.6rem;
+    }
+    
+    .impact-number {
+        font-size: 1.1rem;
+    }
+    
+    .impact-label {
+        font-size: 0.7rem;
+    }
+    
+    .motivation-card {
+        padding: 15px 10px;
+    }
+    
+    .motivation-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .motivation-card p {
+        font-size: 0.8rem;
+    }
+    
+    .motivation-icon {
+        font-size: 1.8rem;
+    }
+}
+
+/* Landscape Orientation Adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-buttons {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 8px;
+    }
+    
+    .nav-btn {
+        padding: 10px 8px;
+    }
+    
+    .btn-icon {
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+    }
+    
+    .btn-text {
+        font-size: 0.7rem;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-intro {
         font-size: 0.9rem;
     }
 }
 
-@media (max-width: 480px) {
-    .back-to-top-btn {
-        padding: 8px 16px;
-        font-size: 0.85rem;
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-background {
+        background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+    }
+    
+    .action-background {
+        background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
     }
 }
+
+/* Print Styles */
+@media print {
+    .nav-buttons,
+    .quiz-controls,
+    .back-to-top-container,
+    .floating-elements {
+        display: none;
+    }
+    
+    .hero-section {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .hero-background,
+    .action-background {
+        display: none;
+    }
+    
+    section {
+        page-break-inside: avoid;
+        padding: 20px 0;
+    }
+    
+    .threats-grid,
+    .waste-types-grid,
+    .countries-info,
+    .action-cards-container,
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .threats-section,
+    .waste-types-section,
+    .sorting-section,
+    .records-section {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: #ecf0f1;
+    }
+    
+    .threats-section .section-title,
+    .waste-types-section .section-title,
+    .sorting-section .section-title,
+    .records-section .section-title {
+        color: #ecf0f1;
+    }
+    
+    .threats-section .section-intro,
+    .waste-types-section .section-intro,
+    .sorting-section .section-intro,
+    .records-section .section-intro {
+        color: rgba(236, 240, 241, 0.8);
+    }
+    
+    .threat-card,
+    .waste-card,
+    .country-card,
+    .container-card,
+    .sorting-tips {
+        background: rgba(236, 240, 241, 0.1);
+        border-color: rgba(236, 240, 241, 0.2);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav-btn:hover,
+    .threat-card:hover,
+    .waste-card:hover,
+    .country-card:hover,
+    .container-card:hover,
+    .quiz-option:hover,
+    .action-card:hover,
+    .impact-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .nav-btn:active,
+    .threat-card:active,
+    .waste-card:active,
+    .country-card:active,
+    .container-card:active,
+    .quiz-option:active,
+    .action-card:active,
+    .impact-item:active {
+        transform: scale(0.98);
+    }
+    
+    .check-answers-btn,
+    .reset-quiz-btn {
+        min-height: 44px;
+    }
+    
+    .quiz-option {
+        min-height: 44px;
+    }
+}
+
+
+
+
 
 
 
